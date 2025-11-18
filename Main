@@ -1,0 +1,12 @@
+#include <iostream>
+#include <header 1>
+using namespace std;
+
+int main(){
+    cout << "Set up has begun";
+    return 0;
+/*test*/
+
+
+
+}
