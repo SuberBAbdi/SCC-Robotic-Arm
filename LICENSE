@@ -26,9 +26,6 @@ THIRD-PARTY NOTICE
 ──────────────────
 The Freenove Robot Arm firmware files (arm.py, stepmotor.py, sensor.py,
 messageThread.py) are NOT included in this repository. They are available
-separately at:
-
-  https://github.com/Freenove/Freenove_Robot_Arm_Kit_for_Raspberry_Pi
-
+separately at: https://github.com/Freenove/Freenove_Robot_Arm_Kit_for_Raspberry_Pi
 and are licensed under Creative Commons Attribution-NonCommercial-ShareAlike
 3.0 Unported (CC BY-NC-SA 3.0) by Freenove Creative Technology Co., Ltd.
