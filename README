@@ -1,4 +1,4 @@
-#SCC Robot Arm Project (Tic Tac Toe)
+# SCC Robot Arm Project (Tic Tac Toe)
 
 
 
@@ -18,7 +18,7 @@ Clone that repo to your Pi and run `tictactoe_pi.py` from inside `Server/Code/`.
 Upload Joystick_Control.ino to the Arduino
 
 
-###Components Required (Alternatives are possible excepr for the Arm)
+### Components Required (Alternatives are possible excepr for the Arm)
    | Robot Arm       | Freenove FNK0036                     |
    | Pi              | Raspberry Pi 3B+                     |
    | Microcontroller | Arduino UNO R4 WiFi                  |
@@ -26,7 +26,7 @@ Upload Joystick_Control.ino to the Arduino
    | Camera          | Pi Camera Module 2 or USB webcam     |
    | Connection      | Wi-Fi TCP socket (Pi acts as server) |
 
-###Joystick 1 — Cursor (XY navigation)
+### Joystick 1 — Cursor (XY navigation)
    | Joystick Pin | Arduino Pin |
    | VCC          | 5V          |
    | GND          | GND         |
@@ -34,7 +34,7 @@ Upload Joystick_Control.ino to the Arduino
    | VRY          | A1          |
    | SW           | D2          |
 
-###Joystick 2 —  Cursor (Z navigation) / Confirm move
+### Joystick 2 —  Cursor (Z navigation) / Confirm move
    | Joystick Pin | Arduino Pin |
    | VCC          | 5V          |
    | GND          | GND         |
@@ -44,8 +44,8 @@ Upload Joystick_Control.ino to the Arduino
 See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference.
 
 
-##Setup & Running
-###1. Arduino
+## Setup & Running
+### 1. Arduino
    1. Open `arduino/tictactoe_arduino/tictactoe_arduino.ino` in the Arduino IDE
    2. Install the WiFiS3and Arduino_LED_Matrix libraries via Library Manager
    3. Edit the top of the file:
@@ -55,7 +55,7 @@ See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference.
       #define PI_ADDRESS  "192.168.x.x"   // Pi's IP
    4. Upload to the Arduino R4 WiFi
 
-###2. Raspberry Pi
+### 2. Raspberry Pi
    1. Clone the Freenove repo (if not already done):
       bash
       git clone https://github.com/Freenove/Freenove_Robot_Arm_Kit_for_Raspberry_Pi.git
@@ -70,7 +70,7 @@ See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference.
       sudo python3 tictactoe_pi.py
       The Pi will print its IP addresses at startup — enter the correct one into the Arduino sketch
 
-###3. Calibration
+### 3. Calibration
    Before playing, you must calibrate `GRID_XY` in `tictactoe_pi.py`:
       1. Run your working arm-control script to jog the arm manually
       2. Hover the pencil tip over each of the 9 box centres on your paper
@@ -80,7 +80,7 @@ See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference.
 See [`docs/calibration.md`](docs/calibration.md) for full details.
 
 
-##Controls
+## Controls
    | Input                      | Action                         |
    | Joystick 1 (x/y direction) | Move cursor between grid cells |
    | Joystick 2 (z direction)   | Move cursor between grid cells |
@@ -90,7 +90,7 @@ See [`docs/calibration.md`](docs/calibration.md) for full details.
 
 The LED matrix on the Arduino shows your current cursor position as a dot on a 3×3 grid.
 
-##Game Logic
+## Game Logic
    - Player = O — drawn as an octagon (8-segment polygon)
    - Robot AI = X — drawn as two diagonal strokes
    - AI selects randomly from remaining empty cells
@@ -107,7 +107,7 @@ The LED matrix on the Arduino shows your current cursor position as a dot on a 3
    | Joystick drift / phantom moves | Increase `DEADZONE` constant in `tictactoe_pi.py`                    |
 
 
-##License
+## License
 
 This project is licensed under the MIT License — see [`LICENSE`](LICENSE) for details.
 
