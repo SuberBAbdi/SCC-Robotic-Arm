@@ -1,4 +1,8 @@
+<div align="center">
+
 # Arm Calibration Guide
+
+</div>
 
 ## Why calibration is needed
 
