@@ -105,34 +105,34 @@ See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference.
 
 ### 2. Raspberry Pi
 
-Clone the Freenove repo (if not already done):
-```bash
-git clone https://github.com/Freenove/Freenove_Robot_Arm_Kit_for_Raspberry_Pi.git
-cd Freenove_Robot_Arm_Kit_for_Raspberry_Pi/Server/Code
-```
-
-Copy `tictactoe_pi.py` into that directory, then install dependencies:
-```bash
-pip3 install opencv-python
-```
-
-Run the game:
-```bash
-sudo python3 tictactoe_pi.py
-```
-
-The Pi will print its IP addresses at startup — enter the correct one into the Arduino sketch.
+   Clone the Freenove repo (if not already done):
+   ```bash
+   git clone https://github.com/Freenove/Freenove_Robot_Arm_Kit_for_Raspberry_Pi.git
+   cd Freenove_Robot_Arm_Kit_for_Raspberry_Pi/Server/Code
+   ```
+   
+   Copy `tictactoe_pi.py` into that directory, then install dependencies:
+   ```bash
+   pip3 install opencv-python
+   ```
+   
+   Run the game:
+   ```bash
+   sudo python3 tictactoe_pi.py
+   ```
+   
+   The Pi will print its IP addresses at startup — enter the correct one into the Arduino sketch
 
 ### 3. Calibration
 
-Before playing, you **must** calibrate `GRID_XY` in `tictactoe_pi.py`:
-
-1. Run your working arm-control script to jog the arm manually
-2. Hover the pencil tip over each of the 9 box centres on your paper
-3. Note the X/Y mm coordinates at each position
-4. Update `GRID_XY` in `tictactoe_pi.py` accordingly
-
-See [`docs/calibration.md`](docs/calibration.md) for full details.
+   Before playing, you **must** calibrate `GRID_XY` in `tictactoe_pi.py`:
+   
+   1. Run your working arm-control script to jog the arm manually
+   2. Hover the pencil tip over each of the 9 box centres on your paper
+   3. Note the X/Y mm coordinates at each position
+   4. Update `GRID_XY` in `tictactoe_pi.py` accordingly
+   
+   See [`docs/calibration.md`](docs/calibration.md) for full details
 
 ---
 
