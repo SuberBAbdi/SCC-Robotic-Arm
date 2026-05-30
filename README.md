@@ -92,7 +92,7 @@ Every component here is changable except for the Robot Arm
 | VRY | A3 |
 | SW  | D3 |
 
-See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference.
+See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference
 
 ---
 
@@ -128,7 +128,7 @@ See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference.
    sudo python3 tictactoe_pi.py
    ```
    
-   The Pi will print its IP addresses at startup  enter the correct one into the Arduino sketch
+   The Pi will print its IP addresses at startup enter the correct one into the Arduino sketch
 
 ### 3. Calibration
 
@@ -152,7 +152,7 @@ See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference.
 | `R` key on Pi keyboard | Reset the game |
 | `Q` key on Pi keyboard | Quit |
 
-The LED matrix on the Arduino shows your current cursor position as a dot on a 3×3 grid.
+The LED matrix on the Arduino shows your current cursor position as a dot on a 3×3 grid
 
 ---
 
@@ -184,8 +184,7 @@ The LED matrix on the Arduino shows your current cursor position as a dot on a 3
 
 This project is licensed under the **MIT License**  see [`LICENSE`](LICENSE) for details
 
-Freenove arm firmware (`arm.py`, `stepmotor.py`, etc.) is licensed separately under  
-[CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) by Freenove Creative Technology Co., Ltd
+Freenove arm firmware (`arm.py`, `stepmotor.py`, etc.) is licensed separately under [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) by Freenove Creative Technology Co., Ltd
 
 ---
 
