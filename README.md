@@ -21,7 +21,8 @@
 3. The **Freenove FNK0036** robot arm (3× stepper motors + A4988 drivers) physically draws on paper with a pencil
 4. A **USB camera** overlays the live 3×3 grid on screen so you can see the game state in real time
 
-**You are O** (drawn as an octagon). **The robot is X** (two diagonal strokes)
+**You are O** (drawn as an octagon)
+**The robot is X** (two diagonal strokes)
 The AI picks randomly from empty cells keeping the game fair and fun
 
 ---
