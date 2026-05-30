@@ -22,7 +22,9 @@
 4. A **USB camera** overlays the live 3×3 grid on screen so you can see the game state in real time
 
 **You are O** (drawn as an octagon)
+
 **The robot is X** (two diagonal strokes)
+
 The AI picks randomly from empty cells keeping the game fair and fun
 
 ---
