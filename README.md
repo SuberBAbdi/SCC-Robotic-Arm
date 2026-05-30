@@ -10,10 +10,6 @@
 
 ---
 
-<img src="docs/demo.gif" alt="Robot drawing on paper" width="680"/>
-
----
-
 ## 📖 How It Works
 
 1. A **Raspberry Pi 3B+** runs the game server and camera overlay
