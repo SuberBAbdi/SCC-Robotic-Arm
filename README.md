@@ -52,9 +52,8 @@ SSCRobotArm/
 └── README.md
 ```
 
-> **Note:** `arm.py`, `stepmotor.py`, `sensor.py`, and `messageThread.py` are part of the  
-> [Freenove FNK0036 official codebase](https://github.com/Freenove/Freenove_Robot_Arm_Kit_for_Raspberry_Pi).  
-> Clone that repo to your Pi and run `tictactoe_pi.py` from inside `Server/Code/`.
+> **Note:** `arm.py`, `stepmotor.py`, `sensor.py`, and `messageThread.py` are part of the [Freenove FNK0036 official codebase](https://github.com/Freenove/Freenove_Robot_Arm_Kit_for_Raspberry_Pi)  
+> Clone that repo to your Pi and run `tictactoe_pi.py` from inside `Server/Code/`
 
 ---
 
