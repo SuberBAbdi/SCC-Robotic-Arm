@@ -182,10 +182,10 @@ The LED matrix on the Arduino shows your current cursor position as a dot on a 3
 
 ## License
 
-This project is licensed under the **MIT License**  see [`LICENSE`](LICENSE) for details.
+This project is licensed under the **MIT License**  see [`LICENSE`](LICENSE) for details
 
 Freenove arm firmware (`arm.py`, `stepmotor.py`, etc.) is licensed separately under  
-[CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) by Freenove Creative Technology Co., Ltd.
+[CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) by Freenove Creative Technology Co., Ltd
 
 ---
 
