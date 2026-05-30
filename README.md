@@ -9,8 +9,9 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-Camera-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)
 
-</div>
 ---
+
+</div>
 
 ## How It Works
 
