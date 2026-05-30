@@ -1,6 +1,6 @@
 # Tic-Tac-Toe using Freenove Robot Arm (0036)
 
-**A physical Tic-Tac-Toe game where a Freenove FNK0036 robot arm draws X's and O's on paper — controlled by an Arduino R4 WiFi joystick and a Raspberry Pi 3B+.**
+**A physical Tic-Tac-Toe game where a Freenove FNK0036 robot arm draws X's and O's on paper  controlled by an Arduino R4 WiFi joystick and a Raspberry Pi 3B+**
 
 ![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Arduino](https://img.shields.io/badge/Arduino-R4_WiFi-00979D?style=for-the-badge&logo=arduino&logoColor=white)
@@ -10,14 +10,15 @@
 
 ---
 
-## 📖 How It Works
+## How It Works
 
 1. A **Raspberry Pi 3B+** runs the game server and camera overlay
 2. An **Arduino UNO R4 WiFi** reads two joysticks and streams data to the Pi over TCP
 3. The **Freenove FNK0036** robot arm (3× stepper motors + A4988 drivers) physically draws on paper with a pencil
 4. A **USB camera** overlays the live 3×3 grid on screen so you can see the game state in real time
 
-**You are O** (drawn as an octagon). **The robot is X** (two diagonal strokes). The AI picks randomly from empty cells — keeping the game fair and fun.
+**You are O** (drawn as an octagon). **The robot is X** (two diagonal strokes)
+The AI picks randomly from empty cells keeping the game fair and fun
 
 ---
 
@@ -27,7 +28,7 @@
 SSCRobotArm/
 │
 ├── pi/
-│   └── tictactoe.py          # Main game — run this on the Pi in Freenove_Robot_Arm_Kit_for_Raspberry_Pi/Server/Code
+│   └── tictactoe.py          # Main game run this on the Pi in Freenove_Robot_Arm_Kit_for_Raspberry_Pi/Server/Code
 │
 ├── arduino/
 │   └── joystick.ino  # Upload this to Arduino R4 WiFi
@@ -54,20 +55,21 @@ SSCRobotArm/
 
 ## Hardware
 
-| Component | Detail |
+Every component here is changable except for the Robot Arm
+
+| Type of Component | Actual Component |
 |---|---|
 | Robot Arm | Freenove FNK0036 (3× stepper + A4988 + servo clamp) |
 | Pi | Raspberry Pi 3B+ |
 | Microcontroller | Arduino UNO R4 WiFi |
 | Joysticks | 2× standard KY-023 analog joysticks |
 | Camera | Pi Camera Module 2 or USB webcam |
-| Connection | Wi-Fi TCP socket (Pi acts as server) |
 
 ---
 
 ##  Wiring
 
-### Joystick 1 — Cursor (XY Navigation)
+### Joystick 1  Cursor (XY Navigation)
 | Joystick Pin | Arduino Pin |
 |---|---|
 | VCC | 5V |
@@ -76,7 +78,7 @@ SSCRobotArm/
 | VRY | A1 |
 | SW  | D2 |
 
-### Joystick 2 — (Z Navigation) / Confirm Move
+### Joystick 2  (Z Navigation) / Confirm Move
 | Joystick Pin | Arduino Pin |
 |---|---|
 | VCC | 5V |
@@ -99,7 +101,7 @@ See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference.
    ```cpp
    #define WIFI_SSID   "your-network"
    #define WIFI_PASS   "your-password"
-   #define PI_ADDRESS  "192.168.x.x"   // Pi's IP — printed at startup
+   #define PI_ADDRESS  "192.168.x.x"   // Pi's IP  printed at startup
    ```
 4. Upload to the Arduino R4 WiFi
 
@@ -121,7 +123,7 @@ See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference.
    sudo python3 tictactoe_pi.py
    ```
    
-   The Pi will print its IP addresses at startup — enter the correct one into the Arduino sketch
+   The Pi will print its IP addresses at startup  enter the correct one into the Arduino sketch
 
 ### 3. Calibration
 
@@ -151,8 +153,8 @@ The LED matrix on the Arduino shows your current cursor position as a dot on a 3
 
 ## Game Logic
 
-- **Player** = O — drawn as an octagon (8-segment polygon)
-- **Robot AI** = X — drawn as two diagonal strokes
+- **Player** = O drawn as an octagon (8-segment polygon)
+- **Robot AI** = X drawn as two diagonal strokes
 - AI selects randomly from remaining empty cells
 - Player **cannot** select an already-filled cell
 - Win detection checks all 8 lines after every move
@@ -165,7 +167,7 @@ The LED matrix on the Arduino shows your current cursor position as a dot on a 3
 | Problem | Fix |
 |---|---|
 | Arduino can't connect to Pi | Check `PI_ADDRESS` matches the IP printed at Pi startup |
-| Arm moves to wrong position | Recalibrate `GRID_XY` — see `docs/calibration.md` |
+| Arm moves to wrong position | Recalibrate `GRID_XY`  see `docs/calibration.md` |
 | Pencil doesn't touch paper | Lower `PEN_DOWN_Z` in `tictactoe_pi.py` (try `0`) |
 | Camera not found | Run `ls /dev/video*` and update `VideoCapture(0, ...)` index |
 | `from arm import Arm` fails | Must run from `Freenove_Robot_Arm_Kit_for_Raspberry_Pi/Server/Code/` |
@@ -175,11 +177,11 @@ The LED matrix on the Arduino shows your current cursor position as a dot on a 3
 
 ## License
 
-This project is licensed under the **MIT License** — see [`LICENSE`](LICENSE) for details.
+This project is licensed under the **MIT License**  see [`LICENSE`](LICENSE) for details.
 
 Freenove arm firmware (`arm.py`, `stepmotor.py`, etc.) is licensed separately under  
 [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) by Freenove Creative Technology Co., Ltd.
 
 ---
 
-Made with Python, C++, stepper motors, and a pencil.
+Made with Python, C++, stepper motors and a pencil
