@@ -1,3 +1,4 @@
+<div align="center">
 # Tic-Tac-Toe using Freenove Robot Arm (0036)
 
 **A physical Tic-Tac-Toe game where a Freenove FNK0036 robot arm draws X's and O's on paper  controlled by an Arduino R4 WiFi joystick and a Raspberry Pi 3B+**
@@ -8,6 +9,7 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-Camera-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)
 
+</div>
 ---
 
 ## How It Works
