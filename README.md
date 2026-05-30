@@ -1,6 +1,4 @@
-<div align="center">
-
-# 🤖 Robot Tic-Tac-Toe
+# Tic-Tac-Toe using Freenove Robot Arm (0036)
 
 **A physical Tic-Tac-Toe game where a Freenove FNK0036 robot arm draws X's and O's on paper — controlled by an Arduino R4 WiFi joystick and a Raspberry Pi 3B+.**
 
@@ -13,10 +11,6 @@
 ---
 
 <img src="docs/demo.gif" alt="Robot drawing on paper" width="680"/>
-
-> *Place your move with the joystick. The robot arm picks up a pencil and draws back.*
-
-</div>
 
 ---
 
@@ -31,20 +25,23 @@
 
 ---
 
-## 🗂 Repository Structure
+## Repository Structure
 
 ```
-robot-tictactoe/
+SSCRobotArm/
 │
 ├── pi/
-│   └── tictactoe_pi.py          # Main game — run this on the Pi
+│   └── tictactoe.py          # Main game — run this on the Pi in Freenove_Robot_Arm_Kit_for_Raspberry_Pi/Server/Code
 │
 ├── arduino/
-│   └── tictactoe_arduino/
-│       └── tictactoe_arduino.ino  # Upload this to Arduino R4 WiFi
+│   └── joystick.ino  # Upload this to Arduino R4 WiFi
 │
 ├── docs/
-│   ├── demo.gif                 # (add your own demo recording)
+│   ├── demo
+│       └──
+│       └──
+│       └──
+│       └──            
 │   ├── wiring.md                # Wiring reference
 │   └── calibration.md           # Arm calibration guide
 │
@@ -59,7 +56,7 @@ robot-tictactoe/
 
 ---
 
-## ⚙️ Hardware
+## Hardware
 
 | Component | Detail |
 |---|---|
@@ -72,9 +69,9 @@ robot-tictactoe/
 
 ---
 
-## 🔌 Wiring
+##  Wiring
 
-### Joystick 1 — Cursor (XY navigation)
+### Joystick 1 — Cursor (XY Navigation)
 | Joystick Pin | Arduino Pin |
 |---|---|
 | VCC | 5V |
@@ -83,7 +80,7 @@ robot-tictactoe/
 | VRY | A1 |
 | SW  | D2 |
 
-### Joystick 2 — Confirm move
+### Joystick 2 — (Z Navigation) / Confirm Move
 | Joystick Pin | Arduino Pin |
 |---|---|
 | VCC | 5V |
@@ -96,7 +93,7 @@ See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference.
 
 ---
 
-## 🚀 Setup & Running
+## Setup & Running
 
 ### 1. Arduino
 
@@ -143,7 +140,7 @@ See [`docs/calibration.md`](docs/calibration.md) for full details.
 
 ---
 
-## 🎮 Controls
+## Controls
 
 | Input | Action |
 |---|---|
@@ -156,7 +153,7 @@ The LED matrix on the Arduino shows your current cursor position as a dot on a 3
 
 ---
 
-## 📐 Game Logic
+## Game Logic
 
 - **Player** = O — drawn as an octagon (8-segment polygon)
 - **Robot AI** = X — drawn as two diagonal strokes
@@ -167,7 +164,7 @@ The LED matrix on the Arduino shows your current cursor position as a dot on a 3
 
 ---
 
-## 🛠 Troubleshooting
+## Troubleshooting
 
 | Problem | Fix |
 |---|---|
@@ -180,7 +177,7 @@ The LED matrix on the Arduino shows your current cursor position as a dot on a 3
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the **MIT License** — see [`LICENSE`](LICENSE) for details.
 
@@ -189,8 +186,4 @@ Freenove arm firmware (`arm.py`, `stepmotor.py`, etc.) is licensed separately un
 
 ---
 
-<div align="center">
-
 Made with Python, C++, stepper motors, and a pencil.
-
-</div>
