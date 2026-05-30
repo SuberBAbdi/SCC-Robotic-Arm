@@ -111,18 +111,18 @@ See [`docs/wiring.md`](docs/wiring.md) for the full robot arm wiring reference
 
 ### 2. Raspberry Pi
 
-   Clone the Freenove repo (if not already done):
+   1. Clone the Freenove repo (if not already done):
    ```bash
    git clone https://github.com/Freenove/Freenove_Robot_Arm_Kit_for_Raspberry_Pi.git
    cd Freenove_Robot_Arm_Kit_for_Raspberry_Pi/Server/Code
    ```
    
-   Copy `tictactoe_pi.py` into that directory, then install dependencies:
+   2. Copy `tictactoe_pi.py` into that directory, then install dependencies:
    ```bash
    pip3 install opencv-python
    ```
    
-   Run the game:
+   3. Run the game:
    ```bash
    sudo python3 tictactoe_pi.py
    ```
