@@ -189,4 +189,4 @@ Freenove arm firmware (`arm.py`, `stepmotor.py`, etc.) is licensed separately un
 
 ---
 
-Made with Python, C++, stepper motors and a pencil
+Made with Python, C++, stepper motors and a pencil (*it is unknown if the current version of code works due to hardware failure)
