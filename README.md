@@ -40,12 +40,7 @@ SSCRobotArm/
 ├── arduino/
 │   └── joystick.ino  # Upload this to Arduino R4 WiFi
 │
-├── Documents/
-│   ├── demo
-│       └──
-│       └──
-│       └──
-│       └──            
+├── Documents/       
 │   ├── wiring.md                # Wiring reference
 │   └── calibration.md           # Arm calibration guide
 │
